@@ -25,5 +25,6 @@ class HelloServiceProvider extends ServiceProvider
     {
         $this->app->bind('Hello','App\Contracts\Hello');
         $this->app->bind('App\Contracts\Hello','App\Services\HelloWorld');
+        $this->app->bind('App\Contracts\Hello','App\Services\HelloChina');
     }
 }
