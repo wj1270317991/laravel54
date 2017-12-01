@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\FooServiceProvider::class,
         App\Providers\TestServiceProvider::class,
+        App\Providers\HelloServiceProvider::class,
 
     ],
 
