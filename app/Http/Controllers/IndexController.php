@@ -6,6 +6,7 @@ use App\User;
 use Illuminate\Http\Request;
 use Test;
 use App\Contracts\Hello;
+use Route;
 class IndexController extends Controller
 {
     protected $hello;
@@ -23,5 +24,12 @@ class IndexController extends Controller
 
     public function contracts(){
         dd($this->hello->hello());
+    }
+
+    public function routes(){
+        $route = Route::current();
+        $name = Route::currentRouteName();
+        $action = Route::currentRouteAction();
+        dd($name);
     }
 }

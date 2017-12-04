@@ -14,3 +14,10 @@
 Route::get('/', 'IndexController@index');
 Route::get('/hello', 'IndexController@contracts');
 
+Route::get('/routes','IndexController@routes')->name('test');
+
+//单动作控制器
+Route::get('user/{id}', 'ShowProfileController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
